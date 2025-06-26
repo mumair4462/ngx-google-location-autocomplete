@@ -1,6 +1,6 @@
 {
   "name": "ngx-google-location-autocomplete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Angular library that integrates Google Places API to provide location-based autocomplete functionality.",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
