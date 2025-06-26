@@ -1,24 +1,68 @@
-# NgxGoogleLocationAutocomplete
+# ngx-google-location-autocomplete
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+An Angular library that integrates Google Places API to provide location-based autocomplete functionality. Easily add address suggestions with full place details using a customizable, lightweight, and developer-friendly directives/component.
 
-## Code scaffolding
+# Installation
 
-Run `ng generate component component-name --project ngx-google-location-autocomplete` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-google-location-autocomplete`.
-> Note: Don't forget to add `--project ngx-google-location-autocomplete` or else it will be added to the default project in your `angular.json` file. 
+#### npm
 
-## Build
+```
+npm install ngx-google-location-autocomplete
+```
 
-Run `ng build ngx-google-location-autocomplete` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### yarn
 
-## Publishing
+```
+yarn add ngx-google-location-autocomplete
+```
 
-After building your library with `ng build ngx-google-location-autocomplete`, go to the dist folder `cd dist/ngx-google-location-autocomplete` and run `npm publish`.
+# Integration
 
-## Running unit tests
+1. Add google library in your index.html file :
 
-Run `ng test ngx-google-location-autocomplete` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+    <script src="https://maps.googleapis.com/maps/api/js?key=<Your API KEY>&libraries=places&language=en"></script>
+```
 
-## Further help
+2. Replace <You API KEY> with google places api key. Ref - https://developers.google.com/places/web-service/get-api-key
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Usage
+
+1. Add the directive to the component where you want to use it.
+
+```ts
+import { NgxGoogleLocationAutocompleteDirective } from 'ngx-google-location-autocomplete';
+
+@Component({
+  standalone: true,
+  imports: [NgxGoogleLocationAutocompleteDirective]
+  ...
+})
+```
+
+2. Add directive ngx-google-location-autocomplete to your input field (options is an optional parammeter)
+
+```
+<input ngx-google-location-autocomplete [options]='options' #placesRef="ngx-location" (onAddressChange)="handleAddressChange($event)"/>
+```
+
+3. Additionally you can reference directive in your component
+
+```ts
+    @ViewChild("placesRef") placesRef : NgxGoogleLocationAutocompleteDirective;
+
+        public handleAddressChange(address: Address) {
+        // Do some stuff
+    }
+```
+
+## Options
+
+Refer to original google maps api - https://developers.google.com/maps/documentation/javascript/places-autocomplete
+Options object - https://github.com/skynet2/ngx-google-location-autocomplete/blob/master/src/objects/options/options.ts
+Google doc for Options : https://developers.google.com/maps/documentation/javascript/reference/places-widget#AutocompleteOptions
+Example :
+
+```html
+[options]="{ types: [], componentRestrictions: { country: 'UA' } }"
+```

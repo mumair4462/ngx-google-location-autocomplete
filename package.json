@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mumair4462/date-formatter-package.git"
+    "url": "git+https://github.com/mumair4462/ngx-google-location-autocomplete.git"
   },
   "keywords": [
     "angular",
@@ -38,8 +38,8 @@
   "author": "Umair Saeed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mumair4462/date-formatter-package/issues"
+    "url": "https://github.com/mumair4462/ngx-google-location-autocomplete/issues"
   },
-  "homepage": "https://github.com/mumair4462/date-formatter-package#readme",
+  "homepage": "https://github.com/mumair4462/ngx-google-location-autocomplete#readme",
   "sideEffects": false
 }
