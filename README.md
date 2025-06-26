@@ -18,8 +18,6 @@ yarn add ngx-google-location-autocomplete
 
 ## Demo
 
-## Demo
-
 ![Watch the demo](https://raw.githubusercontent.com/mumair4462/ngx-google-location-autocomplete/main/assets/demo-thumbnail.gif)
 
 # Integration
