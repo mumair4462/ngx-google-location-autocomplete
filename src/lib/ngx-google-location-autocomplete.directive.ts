@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Directive, ElementRef, input, InputSignal, model, ModelSignal, output, OutputEmitterRef } from '@angular/core';
-import { Address } from './modules/iCore.interface';
-import { Options } from './modules/options.interface';
+import { Address } from './types/iCore.interface';
+import { Options } from './types/options.interface';
 
 declare let google: any;
 @Directive({
