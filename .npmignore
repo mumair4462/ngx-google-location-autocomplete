@@ -1,2 +1,5 @@
-**/*.map
-!bundles/*.js
+/node_modules
+/src
+
+.env
+.DS_Store
