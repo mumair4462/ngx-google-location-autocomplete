@@ -1,0 +1,45 @@
+{
+  "name": "ngx-google-location-autocomplete",
+  "version": "1.0.0",
+  "description": "An Angular library that integrates Google Places API to provide location-based autocomplete functionality.",
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mumair4462/date-formatter-package.git"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "google",
+    "places",
+    "autocomplete",
+    "google-places",
+    "google-maps",
+    "location",
+    "address",
+    "address-autocomplete",
+    "place-autocomplete",
+    "google-location",
+    "angular-autocomplete",
+    "google-places-autocomplete",
+    "ngx-google-location",
+    "maps-autocomplete",
+    "angular-google-maps",
+    "google-places-api",
+    "angular-component",
+    "location-picker"
+  ],
+  "author": "Umair Saeed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mumair4462/date-formatter-package/issues"
+  },
+  "homepage": "https://github.com/mumair4462/date-formatter-package#readme",
+  "sideEffects": false
+}
