@@ -16,6 +16,11 @@ npm install ngx-google-location-autocomplete
 yarn add ngx-google-location-autocomplete
 ```
 
+## Demo
+
+[![Watch the demo](demo-thumbnail.gif)](https://github.com/mumair4462/ngx-google-location-autocomplete/assets/demo-thumbnail.webm)
+
+
 # Integration
 
 1. Add google library in your index.html file :
