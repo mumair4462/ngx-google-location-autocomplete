@@ -5,8 +5,7 @@ import { Options } from './types/options.interface';
 declare let google: any;
 @Directive({
   selector: '[ngx-google-location-autocomplete]',
-  exportAs: 'ngx-location',
-  standalone: true
+  exportAs: 'ngx-location'
 })
 export class NgxGoogleLocationAutocompleteDirective implements AfterViewInit {
   // This directive can be used to apply Google Location Autocomplete functionality

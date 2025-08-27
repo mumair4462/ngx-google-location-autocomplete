@@ -2,6 +2,17 @@
 
 An Angular library that integrates the Google Places API to provide location-based autocomplete functionality. Easily add address suggestions with full place details using customizable, lightweight, and developer-friendly directives/components.
 
+## Angular Compatibility
+
+The table below shows which versions of **ngx-google-location-autocomplete** are compatible with which versions of **Angular**.
+
+| ngx-google-location-autocomplete | Angular |
+|----------------------------------|---------|
+| 1.0.x                            | ^18.0.0 |
+| 1.2.x                            | ^19.0.0 |
+
+> ℹ️ The library only requires Angular and the Google Maps JavaScript API. No additional runtime dependencies are needed.
+
 # Installation
 
 #### npm
@@ -53,10 +64,10 @@ import { NgxGoogleLocationAutocompleteDirective } from 'ngx-google-location-auto
 3. Additionally you can reference directive in your component
 
 ```ts
-    @ViewChild("placesRef") placesRef : NgxGoogleLocationAutocompleteDirective;
+    public placesRef: Signal<NgxGoogleLocationAutocompleteDirective | undefined>  = viewChild<NgxGoogleLocationAutocompleteDirective>('placesRef');
 
-        public handleAddressChange(address: Address) {
-        // Do some stuff
+    public handleAddressChange(address: Address) {
+      // Do some stuff
     }
 ```
 
