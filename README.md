@@ -8,8 +8,9 @@ The table below shows which versions of **ngx-google-location-autocomplete** are
 
 | ngx-google-location-autocomplete | Angular |
 |----------------------------------|---------|
-| 1.0.x                            | ^18.0.0 |
-| 1.2.x                            | ^19.0.0 |
+| 1.x.x                            | ^18.x.x |
+| 2.x.x                            | ^19.x.x |
+| 3.x.x                            | ^20.x.x |
 
 > ℹ️ The library only requires Angular and the Google Maps JavaScript API. No additional runtime dependencies are needed.
 
